@@ -18,7 +18,7 @@ export default function Hero({ brandName, heroBg, waHref, address }) {
           <h1 className="heroTitle">
             Tempat tenang untuk beristirahat
             <span className="accent"> sejuk</span>,{" "}
-            <span className="accent">nyaman</span>, dan menyambut.
+            <span className="accent">nyaman</span>, dan menenangkan.
           </h1>
           <p className="heroSubtitle">
             {brandName} menawarkan suasana damai, keramahan hangat, dan
