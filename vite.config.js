@@ -19,6 +19,8 @@ export default defineConfig({
     },
     cssCodeSplit: true,
     sourcemap: false,
+    target: "esnext",
+    chunkSizeWarningLimit: 1000,
   },
   optimizeDeps: {
     include: ["react", "react-dom"],

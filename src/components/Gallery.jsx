@@ -11,13 +11,14 @@ export default function Gallery({ images }) {
         </div>
 
         <div className="gallery">
-          {images.map((img) => (
+          {images.map((img, index) => (
             <figure key={img.src} className="galleryItem reveal">
               <img
                 src={img.src}
                 alt={img.alt}
-                loading="lazy"
+                loading={index < 2 ? "eager" : "lazy"}
                 decoding="async"
+                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
               />
             </figure>
           ))}

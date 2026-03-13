@@ -708,3 +708,26 @@
     padding: 0 20px;
   }
 }
+
+@media (max-width: 400px) {
+  .container {
+    width: calc(100% - 20px);
+  }
+  .heroInner {
+    padding: 20px 0;
+  }
+  .heroTitle {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+  .heroSubtitle {
+    font-size: 1rem;
+  }
+  .btn {
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+  .card {
+    padding: 20px;
+  }
+}

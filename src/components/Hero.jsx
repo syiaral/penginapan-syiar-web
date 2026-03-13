@@ -3,14 +3,32 @@ import Icon from "./Icon.jsx";
 export default function Hero({ brandName, heroBg, waHref, address }) {
   return (
     <section className="hero" aria-label="Hero">
-      <img
-        className="heroBg"
-        src={heroBg}
-        alt="Penginapan Alghifari Bongganan - Suasana tenang dan nyaman"
-        fetchpriority="high"
-        loading="eager"
-        decoding="async"
-      />
+      <picture>
+        <source
+          media="(max-width: 480px)"
+          srcSet={`${heroBg} 480w`}
+          sizes="100vw"
+        />
+        <source
+          media="(max-width: 768px)"
+          srcSet={`${heroBg} 768w`}
+          sizes="100vw"
+        />
+        <source
+          media="(max-width: 1024px)"
+          srcSet={`${heroBg} 1024w`}
+          sizes="100vw"
+        />
+        <img
+          className="heroBg"
+          src={heroBg}
+          alt="Penginapan Alghifari Bongganan - Suasana tenang dan nyaman"
+          fetchpriority="high"
+          loading="eager"
+          decoding="async"
+          sizes="(max-width: 1024px) 100vw, 1024px"
+        />
+      </picture>
       <div className="heroOverlay" aria-hidden="true" />
       <div className="container heroInner">
         <div className="heroCopy">
