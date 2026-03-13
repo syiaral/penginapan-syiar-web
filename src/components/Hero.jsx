@@ -3,11 +3,15 @@ import Icon from "./Icon.jsx";
 export default function Hero({ brandName, heroBg, waHref, address }) {
   return (
     <section className="hero" aria-label="Hero">
-      <div
+      <img
         className="heroBg"
-        style={{ backgroundImage: `url("${heroBg}")` }}
-        role="presentation"
+        src={heroBg}
+        alt="Penginapan Alghifari Bongganan - Suasana tenang dan nyaman"
+        fetchpriority="high"
+        loading="eager"
+        decoding="async"
       />
+      <div className="heroOverlay" aria-hidden="true" />
       <div className="container heroInner">
         <div className="heroCopy">
           <p className="eyebrow">Penginapan Alghifari di Bongganan</p>

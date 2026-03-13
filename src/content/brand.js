@@ -2,7 +2,7 @@ import kamar1 from "../assets/kamar (1).webp";
 import kamar2 from "../assets/kamar (2).webp";
 import kamar3 from "../assets/kamar (3).webp";
 import kamar4 from "../assets/kamar (4).webp";
-import heroBg from "../assets/hero.jpg";
+import heroBg from "../assets/hero.webp";
 
 export const BRAND = {
   name: "Penginapan Alghifari",
