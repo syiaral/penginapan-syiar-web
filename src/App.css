@@ -709,6 +709,17 @@
   }
 }
 
+@media (max-width: 520px) {
+  .btnBook {
+    display: none;
+  }
+  .btnWhatsApp {
+    background: linear-gradient(135deg, var(--sage-600), var(--sage-500));
+    border-color: color-mix(in srgb, var(--sage-700) 55%, transparent);
+    color: #fff;
+  }
+}
+
 @media (max-width: 400px) {
   .container {
     width: calc(100% - 20px);
@@ -729,5 +740,12 @@
   }
   .card {
     padding: 20px;
+  }
+}
+
+@media (max-width: 375px) {
+  .btnWhatsApp {
+    padding: 8px 12px;
+    font-size: 12px;
   }
 }

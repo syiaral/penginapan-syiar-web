@@ -19,7 +19,7 @@ export default function Topbar({ brandName, tagline, waHref }) {
       <div className="topbarCtas">
         {waHref ? (
           <a
-            className="btn btnQuiet"
+            className="btn btnQuiet btnWhatsApp"
             href={waHref}
             target="_blank"
             rel="noreferrer"
@@ -27,7 +27,7 @@ export default function Topbar({ brandName, tagline, waHref }) {
             WhatsApp
           </a>
         ) : null}
-        <a className="btn btnPrimary" href="#kontak">
+        <a className="btn btnPrimary btnBook" href="#kontak">
           Book Now
         </a>
       </div>
